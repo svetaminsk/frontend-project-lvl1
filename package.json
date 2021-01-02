@@ -1,0 +1,23 @@
+{
+  "name": "brain-games",
+  "version": "1.0.0",
+  "description": "Hexlet Brain Games",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/svetaminsk/frontend-project-lvl1.git"
+  },
+  "author": "Svetlana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/svetaminsk/frontend-project-lvl1/issues"
+  },
+  "homepage": "https://github.com/svetaminsk/frontend-project-lvl1#readme",
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  }
+}
