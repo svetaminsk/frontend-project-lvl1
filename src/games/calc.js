@@ -1,24 +1,22 @@
-import { start, getRandomNumber } from '../index.js'
+import { start, getRandomNumber } from '../index.js';
 
+// eslint-disable-next-line consistent-return
 const calc = (question) => {
-  let arr = question.split(' ');
-    switch (arr[1]) {
-      case '+':
-        return Math.round((+arr[0] + +arr[2]) * 100) / 100;
-          break;
-      case '-':
-        return Math.round((+arr[0] - +arr[2]) * 100) / 100;
-          break;
-      case '*':
-        return Math.round((+arr[0] * +arr[2]) * 100) / 100;
-          break;
-    }
+  const arr = question.split(' ');
+  // eslint-disable-next-line default-case
+  switch (arr[1]) {
+    case '+':
+      return Math.round((+arr[0] + +arr[2]) * 100) / 100;
+    case '-':
+      return Math.round((+arr[0] - +arr[2]) * 100) / 100;
+    case '*':
+      return Math.round((+arr[0] * +arr[2]) * 100) / 100;
+  }
 };
-  
 const description = 'What is the result of the expression?';
-let operation = '+-*'
+const operation = '+-*';
 const randomOperation = operation[getRandomNumber(0, 2)];
-  
+
 const data = () => {
   const number1 = getRandomNumber(0, 20);
   const number2 = getRandomNumber(0, 20);
