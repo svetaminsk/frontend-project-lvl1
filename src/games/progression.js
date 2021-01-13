@@ -16,7 +16,7 @@ const data = () => {
   const fullArray = calc(number1);
   const removeNumber = getRandomNumber(0, 9);
   const missingNumber = fullArray.splice(removeNumber, 1, '..');
-  const question = `${fullArray}`;
+  const question = `${fullArray.join(' ')}`;
   const answer = `${missingNumber}`;
   return { question, answer };
 };

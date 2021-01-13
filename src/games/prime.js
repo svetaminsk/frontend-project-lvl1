@@ -3,10 +3,13 @@ import { start, getRandomNumber } from '../index.js';
 // eslint-disable-next-line consistent-return
 const calc = (number) => {
   for (let i = 2; i < number / 2; i += 1) {
+    if (number < 2) {
+      return false;
+    }
     if (number % i === 0) {
       return false;
-    } return true;
-  }
+    }
+  } return true;
 };
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
